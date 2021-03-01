@@ -5,6 +5,7 @@ const schema = new mongoose.Schema(
     user_id: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
+      unique: true,
     },
     draft: { type: Boolean, default: true },
     prefix_name: { type: String, enum: ['นาย', 'นาง', 'นางสาว', 'MR', 'MISS', 'MS'] },
