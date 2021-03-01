@@ -1,0 +1,49 @@
+{
+  "name": "Orange-Cap-Innovative",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Jiraphun Jitrukrob",
+  "scripts": {
+    "start": "nodemon .",
+    "start:prod": "NODE_ENV=production node .",
+    "lint:js": "eslint --ext \".js\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js",
+    "lint:fix": "eslint --fix --ext .js ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cluster": "^0.7.7",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-jwt": "^6.0.0",
+    "express-jwt-authz": "^2.4.1",
+    "express-rate-limit": "^5.2.5",
+    "express-validator": "^6.9.2",
+    "helmet": "^4.4.1",
+    "jimp": "^0.16.1",
+    "jwks-rsa": "^1.12.2",
+    "jwt-decode": "^3.1.2",
+    "log-beautify": "^1.2.0",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.16",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}
