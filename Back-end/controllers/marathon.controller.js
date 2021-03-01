@@ -20,8 +20,10 @@ const methods = {
         BIB,
         user_id: findUserId(req),
       });
-      create.save();
-      res.success(successHandle({ _id: create._id }));
+      create.save((marathonError) => {
+        if (marathonError) return res.error(errorHandle(errorMongo(marathonError), 400));
+        else res.success(successHandle({ _id: create._id }));
+      });
     } catch (error) {
       res.error(errorHandle(error.message));
     }
