@@ -1,9 +1,9 @@
-const fizzBuzz = (number) => {
-  return number % 3 === 0 && number % 5 === 0
-    ? "FizzBuzz"
-    : number % 3 === 0
-    ? "Fizz"
-    : "Buzz";
-};
-
+function fizzBuzz(n) {
+  return (
+    (!(n % 15) && "FizzBuzz") ||
+    (!(n % 5) && "Buzz") ||
+    (!(n % 3) && "Fizz") ||
+    n
+  );
+}
 console.log(fizzBuzz(45));
